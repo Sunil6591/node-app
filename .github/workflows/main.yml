@@ -44,7 +44,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tag: ${{ secrets.DOCKER_HUB_USERNAME }}/node-app-image:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/node-app-image:latest
       
       - name: Image digest
         run: echo ${{ steps.build_and_push.output.digest }}
