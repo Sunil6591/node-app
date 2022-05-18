@@ -3,7 +3,7 @@ const sum = require('./utils');
 const app = express();
 
 app.use('/', (req, res) => {
-  res.send(`<h1>hello !!! ${sum(1,6)}</h1>`)
+  res.send(`<h1>hello !!! ${sum(1,7)}</h1>`)
 })
 
 app.listen(4000, () => {
