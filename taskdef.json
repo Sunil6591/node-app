@@ -1,5 +1,4 @@
 {
-    "ipcMode": null,
     "executionRoleArn": "arn:aws:iam::828152498349:role/ecsTaskExecutionRole",
     "containerDefinitions": [
         {
@@ -10,24 +9,15 @@
                     "containerPort": 4000
                 }
             ],
-            "image": "828152498349.dkr.ecr.ap-south-1.amazonaws.com/node-app-repo:latest",
+            "image": "<IMAGE1_NAME>",
             "essential": true,
             "name": "node-app-container"
         }
     ],
     "memory": "956",
-    "taskRoleArn": null,
     "family": "node-app-task",
-    "pidMode": null,
     "requiresCompatibilities": [
         "EC2"
     ],
-    "networkMode": null,
-    "runtimePlatform": null,
-    "cpu": "2048",
-    "inferenceAccelerators": null,
-    "proxyConfiguration": null,
-    "volumes": [],
-    "placementConstraints": [],
-    "tags": []
+    "cpu": "2048"
 }
