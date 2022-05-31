@@ -14,8 +14,10 @@
             "name": "container1"
         }
     ],
+    "memory": "500",
     "family": "task1",
     "requiresCompatibilities": [
         "EC2"
-    ]
+    ],
+    "cpu": "2048"
 }
