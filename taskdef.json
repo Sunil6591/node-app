@@ -11,13 +11,11 @@
             ],
             "image": "<IMAGE1_NAME>",
             "essential": true,
-            "name": "node-app-container"
+            "name": "container1"
         }
     ],
-    "memory": "956",
-    "family": "node-app-task",
+    "family": "task1",
     "requiresCompatibilities": [
         "EC2"
-    ],
-    "cpu": "2048"
+    ]
 }
