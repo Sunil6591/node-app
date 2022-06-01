@@ -14,6 +14,7 @@
         "environment": [],
         "mountPoints": [],
         "volumesFrom": [],
+        "memoryReservation": 500,
         "image": "<IMAGE1_NAME>",
         "name": "container1"
       }
