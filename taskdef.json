@@ -1,23 +1,48 @@
 {
+    "ipcMode": null,
     "executionRoleArn": "arn:aws:iam::828152498349:role/ecsTaskExecutionRole",
     "containerDefinitions": [
-        {
-            "portMappings": [
-                {
-                    "hostPort": 4000,
-                    "protocol": "tcp",
-                    "containerPort": 4000
-                }
-            ],
-            "image": "<IMAGE1_NAME>",
-            "essential": true,
-            "name": "container1"
-        }
+      {
+        "portMappings": [
+          {
+            "hostPort": 4000,
+            "protocol": "tcp",
+            "containerPort": 4000
+          }
+        ],
+        "cpu": 1024,
+        "environment": [],
+        "mountPoints": [],
+        "volumesFrom": [],
+        "image": "<IMAGE1_NAME>",
+        "name": "container1"
+      }
     ],
+    "placementConstraints": [],
     "memory": "500",
-    "family": "task1",
-    "requiresCompatibilities": [
-        "EC2"
+    "taskRoleArn": "arn:aws:iam::828152498349:role/ecsTaskExecutionRole",
+    "compatibilities": [
+      "EXTERNAL",
+      "EC2"
     ],
-    "cpu": "1024"
-}
+    "family": "task1",
+    "requiresAttributes": [
+      {
+        "name": "com.amazonaws.ecs.capability.ecr-auth"
+      },
+      {
+        "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+      },
+      {
+        "name": "com.amazonaws.ecs.capability.task-iam-role"
+      },
+      {
+        "name": "ecs.capability.execution-role-ecr-pull"
+      }
+    ],
+    "requiresCompatibilities": [
+      "EC2"
+    ],
+    "cpu": "1024",
+    "volumes": []
+  }
