@@ -10,7 +10,7 @@
             "containerPort": 4000
           }
         ],
-        "cpu": 1024,
+        "cpu": 512,
         "environment": [],
         "mountPoints": [],
         "volumesFrom": [],
@@ -44,6 +44,6 @@
     "requiresCompatibilities": [
       "EC2"
     ],
-    "cpu": "1024",
+    "cpu": "512",
     "volumes": []
   }
